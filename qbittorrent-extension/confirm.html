@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Send to qBittorrent?</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2e;
+      color: #cdd6f4;
+      padding: 24px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: #89b4fa;
+    }
+    .info {
+      background: #313244;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .info-row {
+      margin-bottom: 8px;
+      font-size: 13px;
+      word-break: break-all;
+    }
+    .info-row:last-child { margin-bottom: 0; }
+    .label {
+      color: #a6adc8;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+    button {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    button:hover { opacity: 0.85; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    #btnSend {
+      background: #89b4fa;
+      color: #1e1e2e;
+    }
+    #btnCancel {
+      background: #45475a;
+      color: #cdd6f4;
+    }
+    #status {
+      margin-top: 12px;
+      font-size: 13px;
+      min-height: 20px;
+    }
+    .success { color: #a6e3a1; }
+    .error { color: #f38ba8; }
+  </style>
+</head>
+<body>
+  <h2>Send to qBittorrent?</h2>
+  <div class="info">
+    <div class="info-row">
+      <span class="label">File:</span>
+      <span id="filename">—</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Size:</span>
+      <span id="filesize">—</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Save to:</span>
+      <span id="savepath">/downloads</span>
+    </div>
+  </div>
+  <div class="buttons">
+    <button id="btnCancel">Cancel</button>
+    <button id="btnSend">Send to qBittorrent</button>
+  </div>
+  <div id="status"></div>
+  <script src="confirm.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - qBittorrent Torrent Sender</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #1a1a2e; }
+    .updated { font-size: 13px; color: #888; margin-bottom: 28px; }
+    h2 { font-size: 18px; margin: 24px 0 8px; color: #1a1a2e; }
+    p, li { font-size: 15px; margin-bottom: 10px; }
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    a { color: #5994e0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 5, 2026</p>
+
+    <h2>Overview</h2>
+    <p>qBittorrent Torrent Sender is a browser extension that helps you send .torrent files directly to your qBittorrent Web UI. We are committed to protecting your privacy.</p>
+
+    <h2>Data Collection</h2>
+    <p>This extension does <strong>not</strong> collect, transmit, or share any personal data with third parties. Specifically:</p>
+    <ul>
+      <li>No analytics or tracking of any kind</li>
+      <li>No data is sent to any external server other than your own qBittorrent instance</li>
+      <li>No browsing history, search queries, or download history is recorded</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>The extension stores the following data <strong>locally</strong> on your device using the browser's built-in storage API (<code>chrome.storage.local</code>):</p>
+    <ul>
+      <li><strong>qBittorrent Web UI URL</strong> — the address of your qBittorrent server</li>
+      <li><strong>Username and password</strong> — credentials for authenticating with your qBittorrent Web UI</li>
+      <li><strong>Default save path</strong> — the directory where downloaded files are saved</li>
+    </ul>
+    <p>This data never leaves your device except to authenticate with the qBittorrent server you have configured.</p>
+
+    <h2>Permissions</h2>
+    <p>The extension requests the following permissions:</p>
+    <ul>
+      <li><strong>downloads</strong> — to detect when .torrent files are being downloaded</li>
+      <li><strong>storage</strong> — to save your settings locally</li>
+      <li><strong>notifications</strong> — to display status notifications</li>
+      <li><strong>host permissions</strong> — to communicate with your qBittorrent Web UI and fetch .torrent files from download URLs</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Your credentials are stored locally in the browser's extension storage area. We recommend:</p>
+    <ul>
+      <li>Using a strong, unique password for your qBittorrent Web UI</li>
+      <li>Accessing your qBittorrent instance over a secure local network or VPN</li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>Any updates to this privacy policy will be reflected in the extension update and this page. The "Last updated" date will be revised accordingly.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue on the project's GitHub repository.</p>
+  </div>
+</body>
+</html>
